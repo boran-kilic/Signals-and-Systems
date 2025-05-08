@@ -1,0 +1,6 @@
+function [xs] = SUMCS(t,A,omega) 
+    xs = zeros(1,length(t));
+    for i = 1 : length(A) 
+        xs = A(i)*exp(1j*omega(i)*t);
+    end 
+end
